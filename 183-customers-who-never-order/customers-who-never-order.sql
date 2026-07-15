@@ -1,0 +1,1 @@
+SELECT name as Customers FROM Customers LEFT JOIN Orders On Customers.id = Orders.customerId WHERE Customers.id NOT IN (SELECT customerId FROM Orders) ;

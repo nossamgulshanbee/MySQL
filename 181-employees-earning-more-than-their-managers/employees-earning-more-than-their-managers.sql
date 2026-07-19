@@ -1,0 +1,1 @@
+SELECT m.name as Employee FROM Employee as e LEFT JOIN Employee as m ON e.id=m.managerId WHERE e.salary<m.salary;
